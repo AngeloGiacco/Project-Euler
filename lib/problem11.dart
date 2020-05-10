@@ -28,6 +28,8 @@ The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
 */
+library euler.problem11;
+
 int get_product(
         int i1, int i2, int i3, int i4, int j1, int j2, int j3, int j4) =>
     int.parse(numbers[i1][j1]) *

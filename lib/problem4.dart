@@ -1,6 +1,7 @@
 /*
 Find the largest palindrome made from the product of two 3-digit numbers.
 */
+library euler.problem4;
 
 bool checkPalindrome(int number) {
   return int.parse(number.toString().split("").reversed.join("")) == number;

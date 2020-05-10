@@ -1,6 +1,7 @@
 /*
 What is the largest prime factor of the number 600851475143 ?
 */
+library euler.problem3;
 
 import 'dart:math';
 import 'package:more/math.dart';

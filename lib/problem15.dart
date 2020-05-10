@@ -4,6 +4,7 @@ How many such routes are there through a 20×20 grid?
 */
 
 //need to calculate 40! / 20! x 20! = 40 x 39 x 38 ... x 21 / 20!
+library euler.problem15;
 
 int factorial(int number) => (number == 1) ? 1 : number * factorial(number - 1);
 

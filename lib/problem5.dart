@@ -2,6 +2,8 @@
 
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 */
+library euler.problem5;
+
 const min = 2522;
 const List<int> numbers = [
   2,

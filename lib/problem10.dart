@@ -1,6 +1,7 @@
 /*
 Find the sum of all the primes below two million.
 */
+library euler.problem10;
 
 import 'package:more/math.dart';
 

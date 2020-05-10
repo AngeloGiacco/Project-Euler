@@ -18,6 +18,7 @@
 /// Which starting number, under one million, produces the longest chain?
 ///
 /// NOTE: Once the chain starts the terms are allowed to go above one million.
+library euler.problem14;
 
 class CollatzConjecture {
   // Put your code here

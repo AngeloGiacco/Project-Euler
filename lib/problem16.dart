@@ -3,6 +3,8 @@
 
 What is the sum of the digits of the number 21000?
 */
+library euler.problem16;
+
 void main() {
   BigInt power = BigInt.parse("2").pow(1000);
   List<String> digits = power.toString().split("");
