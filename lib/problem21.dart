@@ -9,23 +9,25 @@ Evaluate the sum of all the amicable numbers under 10000.
 
 import 'dart:math';
 
-int sumFactors(int n) {
-  var factorsArr = [];
-  factorsArr.add(1);
-  for (var test = n - 1; test >= sqrt(n).toInt(); test--)
-    if (n % test == 0) {
-      factorsArr.add(test);
-      factorsArr.add(n ~/ test);
+int sumProperFactors(int n) {
+  int sum = 1;
+  for (int divisor = 2; divisor * divisor <= n; divisor++) {
+    if (n % divisor == 0) {
+      if (n ~/ divisor == divisor) {
+        sum += divisor;
+      } else {
+        sum += divisor + n ~/ divisor;
+      }
     }
-  int sum = factorsArr.fold<int>(0, (prev, curr) => prev + curr);
+  }
   return sum;
 }
 
 void main() {
   int sum = 0;
   for (int i = 0; i < 10000; i++) {
-    if (sumFactors(sumFactors(i)) == i && sumFactors(i) > i) {
-      sum += sumFactors(i) + i;
+    if (sumProperFactors(sumProperFactors(i)) == i && sumProperFactors(i) > i) {
+      sum += sumProperFactors(i) + i;
     }
   }
   print(sum);
