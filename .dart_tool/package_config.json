@@ -20,12 +20,18 @@
       "languageVersion": "2.7"
     },
     {
+      "name": "trotter",
+      "rootUri": "file:///Users/angelogiacco/.pub-cache/hosted/pub.dartlang.org/trotter-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
       "name": "euler",
       "rootUri": "../",
       "packageUri": "lib/"
     }
   ],
-  "generated": "2020-05-10T14:13:45.019671Z",
+  "generated": "2020-05-14T19:52:37.013412Z",
   "generator": "pub",
   "generatorVersion": "2.8.1"
 }
