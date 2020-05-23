@@ -7,6 +7,7 @@ There are exactly four non-trivial examples of this type of fraction, less than 
 
 If the product of these four fractions is given in its lowest common terms, find the value of the denominator.
 */
+library euler.problem33;
 
 bool shareOneDigit(String num1, String num2) =>
     Set.from((num1 + num2).split("")).length == 3 &&
