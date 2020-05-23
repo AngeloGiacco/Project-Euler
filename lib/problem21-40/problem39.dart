@@ -7,6 +7,7 @@ If p is the perimeter of a right angle triangle with integral length sides, {a,b
 
 For which value of p ≤ 1000, is the number of solutions maximised?
 */
+library euler.problem39;
 
 int getOptions(int n) {
   int res = 0;
