@@ -5066,11 +5066,12 @@ final List<List<int>> pyramid = [
 
 void main() {
   for (int i = pyramid.length - 2; i >= 0; i--) {
-    for (int j = 0; j < pyramid[i].length; j++) {
+    for (int j = 0; j < pyramid[i+1].length - 1; j++) {
       pyramid[i][j] += (pyramid[i + 1][j + 1] > pyramid[i + 1][j])
           ? pyramid[i + 1][j + 1]
           : pyramid[i + 1][j];
     }
+    pyramid.removeAt(i+1);
   }
   print(pyramid[0][0]);
 }
